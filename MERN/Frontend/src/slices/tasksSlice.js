@@ -7,7 +7,7 @@ const initialState = {
     error:''
 }
 
-const BASE_URL = 'https://to-do-list-taupe-two.vercel.app'
+const BASE_URL = 'https://to-do-list-taupe-two.vercel.app/api/tasks'
 
 //GET
 export const getTasksFromServer = createAsyncThunk(

@@ -1,9 +1,11 @@
 const express = require("express");
-require("dotenv").config();
+//require("dotenv").config();
 const mongoose = require("mongoose");
 const app = express();
 const taskRoutes = require("./routes/taskRoute");
 const cors = require('cors');
+
+
 
 //Middleware
 app.use((req, res, next) => {
@@ -19,8 +21,7 @@ app.use(express.json());
 // });
 
 // DB connection
-mongoose
-  .connect(process.env.MONGO_URI)
+mongoose.connect('mongodb+srv://admin:admin@mern.3qrgf5s.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
     app.listen(process.env.PORT, () => {
       console.log(

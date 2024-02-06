@@ -7,7 +7,7 @@ const initialState = {
     error:''
 }
 
-const BASE_URL = 'https://mern-ng9l-gktngxoxa-tamilcodingwizard.vercel.app'
+const BASE_URL = 'https://to-do-list-taupe-two.vercel.app'
 
 //GET
 export const getTasksFromServer = createAsyncThunk(
